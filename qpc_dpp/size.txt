@@ -1,0 +1,2 @@
+Avec QP/V (QNV), CCS en mode Release :
+MSP430:  Flash/FRAM usage is 5004 bytes. RAM usage is 351 bytes.
