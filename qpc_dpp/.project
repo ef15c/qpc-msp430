@@ -28,12 +28,12 @@
 		<link>
 			<name>qf</name>
 			<type>2</type>
-			<location>/home/nounours/QuantumLeaps/qpc/src/qf</location>
+			<locationURI>PARENT-1-WORKSPACE_LOC/QuantumLeaps/qpc/src/qf</locationURI>
 		</link>
 		<link>
 			<name>qv/qv.c</name>
 			<type>1</type>
-			<location>/home/nounours/QuantumLeaps/qpc/src/qv/qv.c</location>
+			<locationURI>PARENT-1-WORKSPACE_LOC/QuantumLeaps/qpc/src/qv/qv.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
