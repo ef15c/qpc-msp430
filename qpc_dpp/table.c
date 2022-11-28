@@ -150,6 +150,9 @@ static QState Table_serving(Table * const me, QEvt const * const e) {
         /*${AOs::Table::SM::active::serving} */
         case Q_ENTRY_SIG: {
             uint8_t n;
+
+            BSP_displayPaused(0U);
+
             for (n = 0U; n < N_PHILO; ++n) { /* give permissions to eat... */
                 if ((me->isHungry[n] != 0U)
                     && (me->fork[LEFT(n)] == FREE)
@@ -260,12 +263,6 @@ static QState Table_paused(Table * const me, QEvt const * const e) {
         /*${AOs::Table::SM::active::paused} */
         case Q_ENTRY_SIG: {
             BSP_displayPaused(1U);
-            status_ = Q_HANDLED();
-            break;
-        }
-        /*${AOs::Table::SM::active::paused} */
-        case Q_EXIT_SIG: {
-            BSP_displayPaused(0U);
             status_ = Q_HANDLED();
             break;
         }

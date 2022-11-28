@@ -31,6 +31,11 @@
 #ifndef DPP_H
 #define DPP_H
 
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
 enum DPPSignals {
     EAT_SIG = Q_USER_SIG, /* published by Table to let a philosopher eat */
     DONE_SIG,       /* published by Philosopher when done eating */
@@ -87,6 +92,10 @@ extern QActive * const AO_Philo[N_PHILO];
 /*${AOs::AO_Table} .........................................................*/
 extern QActive * const AO_Table;
 /*$enddecl${AOs::AO_Table} ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* DPP_H */
 
